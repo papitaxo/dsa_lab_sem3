@@ -1,2 +1,2 @@
-# ds_lab_sem3
+# DS_sem3
  program done in college program
