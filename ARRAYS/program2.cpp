@@ -38,7 +38,7 @@ int main() {
 // deletion function 
 
     int* del(int N,int A[], int pos) {
-        for (int i=pos-1; i<N ; i++) {
+        for (int i=pos-1; i<N ; i++) { // we will shift values after position to its next value 
                 A[i]=A[i+1];
                 }
         return A;
