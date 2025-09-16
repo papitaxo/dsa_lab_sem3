@@ -1,22 +1,24 @@
 #include<iostream>
 // deletion of an array 
-int* del(int N,int A[], int value);
+int* del(int N,int A[], int pos);
 
 int main() {
     
     int N;
-    int A[N];
 
     std::cout<<"Enter the size of an array: ";
     std::cin>>N;
+
+    int A[N];
 
     for ( int i=0; i < N; i++) {
         std::cout<<"Enter the element "<< i+1 << ": ";
         std::cin>>A[i];
     }
+    
     int X;
 
-    std::cout<<"Enter Value to Delete: ";
+    std::cout<<"Enter the pos of element to delete: ";
     std::cin>>X;
 
     del(N,A,X); 
@@ -35,13 +37,9 @@ int main() {
 
 // deletion function 
 
-    int* del(int N,int A[], int value) {
-        for (int i=0; i<N ; i++) {
-            if(A[i]==value) {
-                while (i!=N) {
+    int* del(int N,int A[], int pos) {
+        for (int i=pos-1; i<N ; i++) {
                 A[i]=A[i+1];
                 }
-            }
-        }
         return A;
-    }
+            }
