@@ -1,16 +1,16 @@
 #include<iostream>
 
-
 // insertion of an element in the array
 
 int* insert(int size,int Array[],int value, int pos);
 
 int main() {
     int N;
-    int A[N];
 
     std::cout<<"Enter the size of an array: ";
     std::cin>>N;
+    
+    int A[N];
 
     for ( int i=0; i < N; i++) {
         std::cout<<"Enter the element "<< i+1 << ": ";
@@ -29,8 +29,8 @@ int main() {
         // is added.
 
     std::cout<<"{ ";
-    for ( int i=0; i < N; i++)  {
-        std::cout<<A[i] <<" ";
+    for ( int i=0; i < N ; i++)  {
+        std::cout<< A[i] <<" ";
     }
     std::cout<<" }";
 
